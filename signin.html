@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup/Login</title>
+    <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container" id="signupFormContainer">
+        <h2>Signup</h2>
+        <form id="signupForm">
+          <input type="text" id="username" placeholder="Username" />
+          <input type="email" id="email" placeholder="Email" />
+          <input type="password" id="password" placeholder="Password" />
+          <button type="submit">Signup</button>
+        </form>
+        <div id="signupMessage"></div>
+      </div>
+      <div class="form-container" id="loginFormContainer" style="display: none;">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input type="text" id="loginUsername" placeholder="Username" />
+          <input type="password" id="loginPassword" placeholder="Password" />
+          <button type="submit">Login</button>
+        </form>
+        <div id="loginMessage"></div>
+      </div>
+      <div id="switch">
+        <button id="showSignup"style="display: none;">Show Signup</button>
+        <button id="showLogin">Show Login</button>
+      </div>
+    </div>
+    <canvas class="background"></canvas>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+  </body>
+</html>
